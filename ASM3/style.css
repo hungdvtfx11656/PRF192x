@@ -1,0 +1,39 @@
+.valid_input {
+    border-color: #6699FF;
+    border-width: 1px;
+}
+.invalid_input {
+    border-color: #CC6666;
+    border-width: 1px;
+    animation-name: invalid_fade;
+    animation-duration: 0.7s;
+}
+
+.valid_feedback {
+    color: #0033CC;
+    font-size: 0.75rem;
+    /* transition: 0.5s; */
+    margin: 0.25rem 0 -0.25rem 0;
+    padding: 0 0 0 0.25rem;
+}
+
+.invalid_feedback {
+    color: #CC3333;
+    font-size: 0.75rem;
+    /* transition: 0.5s; */
+    margin: 0.25rem 0 -0.25rem 0;
+    padding: 0 0 0 0.25rem;
+}
+
+@keyframes invalid_fade {
+    50%  {background-color: #FFCCCC;}
+}
+
+@media only print {
+    form {
+        display: none;
+    }
+    #function_row {
+        display: none;
+    }
+}

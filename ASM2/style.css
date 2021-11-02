@@ -1,0 +1,10 @@
+.invalid_input {
+    border-color: #FF7E79;
+    border-width: 2px;
+    animation-name: invalid_fade;
+    animation-duration: 0.7s;
+}
+
+@keyframes invalid_fade {
+    50%  {background-color: #FF7E79;}
+}

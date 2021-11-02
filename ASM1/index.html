@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM1</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="">
+        <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4">
+                <div id = "user_card" class="px-3 pt-3 pb-1 mt-5 bg-light rounded font-weight-bold">
+                </div>
+                <div id="try_it_btn" class="my-3" onclick="try_it()">
+                    <button type="button" class="btn btn-primary form-control">Try it</button>
+                </div>
+                <div id="next_step_btn" class="my-3" onclick="next_step()">
+                    <button type="button" class="btn btn-primary form-control">Bước tiếp theo</button>
+                </div>
+                <div id="end_form">
+                    <div class="row">
+                        <div class="col-6">
+                            <div id="print_btn" class="my-3" onclick="print()">
+                                <button type="button" class="btn btn-primary form-control">In kết quả</button>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div id="try_again_btn" class="my-3" onclick="location.reload()">
+                                <button type="button" class="btn btn-secondary form-control">Làm lại</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

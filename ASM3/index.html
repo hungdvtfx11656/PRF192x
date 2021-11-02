@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+</head>
+<body>
+    <div>
+        <div class="container bg-light p-3">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 m-3">
+                    <div class="text-center text-black-50">
+                        <h1 class="">Class Marksheet</h1>
+                        <p>Bảng điểm xếp hạng học sinh</p>
+                    </div>
+                    <form action="" class="" >
+                        <div class="row">
+                            <div class="my-3">
+                                <div class="input-group">
+                                    <input id="first_name_input" type="text" class="form-control" placeholder="Họ và tên đệm">
+                                    <input id="last_name_input" type="text" class="form-control" placeholder="Tên">
+                                </div>
+                                <div class="feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-4 my-3">
+                                <input type="number" step="0.1" min="0" max="10" class="form-control" id="math_input" value="" placeholder="Điểm toán">
+                                <div class="feedback"></div>
+                            </div>
+                            <div class="col-4 my-3">
+                                <input type="number" step="0.1" min="0" max="10" class="form-control" id="phys_input" value="" placeholder="Điểm lý">
+                                <div class="feedback"></div>
+                            </div>
+                            <div class="col-4 my-3">
+                                <input type="number" step="0.1" min="0" max="10" class="form-control" id="chem_input" value="" placeholder="Điểm hóa">
+                                <div class="feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-primary w-100 mt-3" id="create_new_btn">Tạo mới</button>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="input-group mt-3">
+                                    <input id="id_input" type="number" step="1" class="form-control" placeholder="Số thứ tự">
+                                    <button id="change_btn" class="btn btn-primary w-25" type="button">Sửa</button>
+                                    <button id="delete_btn" class="btn btn-danger w-25" type="button">Xóa</button>
+                                </div>
+                                <div class="feedback"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="below" class="">
+                <div id="student_table">
+                    <table class="table">
+                        <thead class="text-uppercase text-black-50">
+                          <tr class="">
+                            <th class="col-1" scope="col">S.T.T</th>
+                            <th class="col-3" scope="col">Tên</th>
+                            <th class="col-1" scope="col">Toán</th>
+                            <th class="col-1" scope="col">Lý</th>
+                            <th class="col-1" scope="col">Hóa</th>
+                            <th class="col-1" scope="col">T.B.</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="function_row" class="">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary w-100 my-2" id="average_cal_btn">Điểm trung bình</button>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <button type="button" class="btn btn-primary w-100 my-2" id="show_grade_btn">Học sinh giỏi</button>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <button type="button" class="btn btn-primary w-100 my-2" id="sort_btn">Xếp hạng</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary w-100 my-2" id="print_btn">In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
